@@ -59,15 +59,17 @@
     },
     "extra": {
       "installer-paths": {
-        "inc/{$name}" : [
+        "libs/{$name}" : [
           "sanchothefat/wp-sass",
           "tgm/plugin-activation"
         ],
-        "inc/wp-sass/phpsass" : [
+        "libs/wp-sass/phpsass" : [
           "richthegeek/phpsass"
         ]
       }
     },
     "scripts": {
+        "post-install-cmd": ["bower install"],
+        "post-update-cmd": ["bower update"]
     }
 }
