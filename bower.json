@@ -1,0 +1,10 @@
+{
+  "name": "WP Theme Starter Kit",
+  "directoty": "assets",
+  "version": "1.0.0",
+  "main": "./style.css",
+  "dependencies": {
+    "jlong/sass-bootstrap": "dev-master",
+    "jquery": "~1.7.2"
+  }
+}

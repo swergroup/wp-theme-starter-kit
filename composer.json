@@ -1,6 +1,6 @@
 {
     "name": "swergroup/wp-theme-starter-kit",
-    "description": "WP theme starter kit",
+    "description": "WP Theme starter kit",
     "license": "MIT",
     "authors": [
         {
@@ -10,19 +10,6 @@
         }
     ],
     "repositories": [
-        {
-            "type":"package",
-            "package": {
-              "name": "automattic/_s",
-              "type": "wordpress-theme",
-              "version":"master",
-              "source": {
-                  "url": "https://github.com/Automattic/_s.git",
-                  "type": "git",
-                  "reference":"master"
-                }
-            }
-        },
         {
             "type":"package",
             "package": {
@@ -39,38 +26,45 @@
         {
             "type":"package",
             "package": {
-              "name": "thomaspark/bootswatch",
+              "name": "richthegeek/phpsass",
               "type": "wordpress-plugin",
               "version":"master",
               "source": {
-                  "url": "https://github.com/thomaspark/bootswatch.git",
+                  "url": "https://github.com/richthegeek/phpsass.git",
                   "type": "git",
                   "reference":"master"
                 }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+              "name": "tgm/plugin-activation",
+              "type": "wordpress-plugin",
+              "version":"master",
+              "dist":{
+                "url":"https://github.com/thomasgriffin/TGM-Plugin-Activation/archive/master.zip",
+                "type": "zip",
+                "reference":"master"
+              }
             }
         }
     ],
     "minimum-stability": "dev",
     "require": {
-      "automattic/_s": "master",
       "composer/installers": "v1.0.6",
+      "richthegeek/phpsass": "master",
       "sanchothefat/wp-sass": "master",
       "tgm/plugin-activation": "master"
     },
-    "require-dev": {
-      "thomaspark/bootswatch": "dev-master"
-    },
     "extra": {
       "installer-paths": {
-        "theme/" : [
-          "automattic/_s"
-        ],
-        "theme/inc/{$name}" : [
+        "inc/{$name}" : [
           "sanchothefat/wp-sass",
           "tgm/plugin-activation"
         ],
-        "devtools/{$name}" : [
-          "thomaspark/bootswatch"
+        "inc/wp-sass/phpsass" : [
+          "richthegeek/phpsass"
         ]
       }
     },
