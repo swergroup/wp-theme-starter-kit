@@ -1,10 +1,12 @@
 {
   "name": "WP Theme Starter Kit",
-  "directoty": "assets",
+  "directory": "./assets",
   "version": "1.0.0",
   "main": "./style.css",
   "dependencies": {
-    "jlong/sass-bootstrap": "dev-master",
-    "jquery": "~1.7.2"
+    "animate.css": "v2.1.0",
+    "bootstrap": "v3.0.3",
+    "bourbon": "v3.1.8",
+    "modernizr": "v2.7.1"
   }
 }
